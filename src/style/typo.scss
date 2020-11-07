@@ -1,0 +1,61 @@
+@import 'var.scss';
+
+.bt{
+	display: inline-block;
+	width: 100%;
+	font-family: $family;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-bottom: $unit*2;
+	margin-top: 0;
+	font-weight: normal;
+}
+.text-bold{
+	font-weight: bold;
+}
+h1, .heading1{
+	@extend .bt;
+	font-size: 40px;
+	line-height: 40px;
+}
+h2, .heading2, .has-large-font-size{
+	@extend .bt;
+	font-size: 32px;
+	line-height: 36px;
+}
+h3, .heading3{
+	@extend .bt;
+	font-size: 24px;
+	line-height: 32px;
+}
+h4, .heading4{
+	@extend .bt;
+	font-size: 21px;
+	line-height: 28px;
+}
+h5, .heading5{
+	@extend .bt;
+	font-size: 18px;
+	line-height: 18px;
+}
+h6, .heading6{
+	@extend .bt;
+	font-size: 16px;
+	line-height: 16px;
+}
+p{
+	font-size: 18px;
+	line-height: 28px;
+	@extend .bt;
+}
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+	h1, .heading1{
+		font-size: 28px;
+		line-height: 32px;
+	}
+	h2, .heading2{
+		font-size: 28px;
+		line-height: 40px;
+		padding-left: 0;
+	}
+}

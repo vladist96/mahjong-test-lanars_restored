@@ -1,25 +1,32 @@
 import logo from './logo.svg';
-import './App.css';
+import {style} from './style/index.scss'
+import {Generator} from "./components/generator";
+import {Congrat} from "./components/congrat";
+import {Component} from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            finish: false
+        }
+        this.finish = this.finish.bind(this)
+    }
+
+    finish(){
+        this.setState({finish: true})
+    }
+
+    render(props, state) {
+        return (
+            <div className="App">
+                <header className="text-center">
+                    <h1>Mahjong</h1>
+                </header>
+                <Generator setFinish={this.finish}/>
+                {this.state.finish &&
+                <Congrat/>}
+            </div>
+        )
+    }
 }
-
-export default App;

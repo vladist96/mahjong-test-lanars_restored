@@ -1,0 +1,23 @@
+$accent: #ff0000;
+$acceptGreen: #0385f4;
+$grey: #666666;
+$bgColor: #ffffff;
+
+$unit: 8px;
+
+$shadow: rgba(0,0,0,0.2);
+$border:  2px solid $grey;
+
+$phone: $unit * 30; //240
+$tablet: $unit * 96; // 768
+$smallScreen: $unit * 128; // 1024
+$mediumScreen: $unit * 172; // 1374
+$largeScreen: $unit * 240; // 1920
+
+$container: $unit * 160; // 1280
+$headerHeight: $unit * 8; // 64
+
+$transition: 200ms;
+$radius: $unit/2;
+
+$family: 'Segoe UI', 'Helvetica Neue', sans-serif;

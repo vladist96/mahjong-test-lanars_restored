@@ -1,0 +1,49 @@
+@import "../../style/var.scss";
+
+.congrat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  button{
+    width: auto;
+    height: $unit*5;
+
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #e50004;
+    background: #e50004;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 12px;
+    text-transform: uppercase;
+    line-height: normal;
+    -webkit-appearance: none !important;
+
+    &:hover, &:focus, &:active{
+      background: #f61115;
+      border: 1px solid #f61115;
+    }
+  }
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

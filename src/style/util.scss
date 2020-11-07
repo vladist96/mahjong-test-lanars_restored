@@ -1,0 +1,201 @@
+@import 'var.scss';
+
+@media only screen and (min-width: 768px) {
+
+}
+img{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.c{
+	box-sizing: border-box;
+	min-width: $unit*35;
+	max-width: $unit*146;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 $unit*2;
+}
+.container{
+	@extend .c;
+	overflow: hidden;
+}
+.full-height{
+	min-height: 100%;
+	height: 100%;
+}
+.container-no-overflow{
+	@extend .c;
+}
+.row{
+	overflow: hidden;
+	margin-left: - $unit*2;
+	display: flex;
+	flex-wrap: wrap;
+}
+.row-center{
+	@extend .row;
+	align-items: center;
+}
+.section_elem{
+	overflow: hidden;
+	margin: 0 0 $unit*3 0;
+}
+
+.align_bottom{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.width{
+	box-sizing: border-box;
+	padding-left: $unit*3;
+}
+.width10{
+	@extend .width;
+	width: 10%;
+}
+.width20{
+	@extend .width;
+	width: 20%;
+}
+.width25{
+	@extend .width;
+	width: 25%;
+}
+.width30{
+	@extend .width;
+	width: 30%;
+}
+.width33{
+	@extend .width;
+	width: 33.333%;
+}
+.width40{
+	@extend .width;
+	width: 40%;
+}
+.width50{
+	@extend .width;
+	width: 50%;
+}
+.width60{
+	@extend .width;
+	width: 60%;
+}
+.width70{
+	@extend .width;
+	width: 70%;
+}
+.width75{
+	@extend .width;
+	width: 75%;
+}
+.width80{
+	@extend .width;
+	width: 80%;
+}
+.width100{
+	@extend .width;
+	width: 100%;
+}
+.width-s-100{
+	@extend .width;
+	width: 100%;
+}
+.has-2-columns{
+	@extend .row;
+	.wp-block-column{
+		@extend .width50;
+	}
+}
+.has-3-columns{
+	@extend .row;
+	.wp-block-column{
+		@extend .width33;
+	}
+}
+.has-4-columns{
+	@extend .row;
+	.wp-block-column{
+		@extend .width25;
+	}
+}
+.header_btn{
+	width: auto !important;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align:right;
+}
+.text-bold{
+	font-weight: bold;
+}
+.section_base{
+	overflow: hidden;
+	margin: $unit*4 auto;
+	padding: $unit*4 0;
+}
+
+.noSelect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+	.row{
+		margin-left: 0;
+	}
+	footer{
+		.width25{
+			margin-left: $unit*2;
+		}
+	}
+	.width20, .width25, .width30, .width33, .width40, .width50, .width60, .width70, .width80, .width100{
+		width: 100%;
+		padding: 0;
+	}
+	.has-2-columns{
+		.wp-block-column{
+			width: 100%;
+		}
+	}
+	.has-3-columns{
+		.wp-block-column{
+			width: 100%;
+		}
+	}
+	.has-4-columns{
+		.wp-block-column{
+			width: 100%;
+		}
+	}
+	.ripple--white {
+		background-position: center;
+		transition: background 0.3s;
+		&:hover {
+			background: var(--background-color) radial-gradient(circle, transparent 1%, var(--background-color--hover) 1%) center/15000%;
+		}
+		&:active {
+			background-color: var(--background-color);
+			background-size: 100%;
+			transition: background 0s;
+		}
+	}
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

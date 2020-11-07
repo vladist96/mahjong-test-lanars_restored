@@ -1,3 +1,5 @@
+if smth will go wrong use node v12.18.3 and npm v6.14.8
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
